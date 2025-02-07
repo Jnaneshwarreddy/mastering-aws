@@ -1,5 +1,5 @@
 
-![Portfolio_Thumbnail](https://github.com/saikiranpi/mastering-aws/assets/109568252/df715451-e120-4ebc-b7e0-d3eadcbbce72)
+
 
 
 
@@ -11,34 +11,33 @@
 
 -    sudo apt update && sudo apt install certbot python3-certbot-nginx
 
--    sudo mkdir -p /var/www/pinapathrunisaikiran.co.in/html
+-    sudo mkdir -p /var/www/testing24.xyz/html
 
--    sudo chown -R $USER:$USER /var/www/pinapathrunisaikiran.co.in/html
+-    sudo chown -R $USER:$USER /var/www/testing24.xyz/html
 
--    sudo chmod -R 755 /var/www/pinapathrunisaikiran.co.in
-
--    nano /var/www/pinapathrunisaikiran.co.in/html/index.html
+-    sudo chmod -R 755 /var/www/testing24.xyz
+-    nano /var/www/testing24.xyz/html/index.html
 
 <html>
     <head>
-        <title>Welcome to pinapathrunisaikiran.co.in!</title>
+        <title>Welcome to testing24.xyz!</title>
     </head>
     <body>
-        <h1>Success! The pinapathrunisaikiran.co.in server block is working!</h1>
+        <h1>Success! The testing24.xyz server block is working!</h1>
     </body>
 </html>
 
 
--    sudo nano /etc/nginx/sites-available/pinapathrunisaikiran.co.in
+-    sudo nano /etc/nginx/sites-available/testing24.xyz
 
 server {
         listen 80;
         listen [::]:80;
 
-        root /var/www/pinapathrunisaikiran.co.in/html;
+        root /var/www/testing24.xyz/html;
         index index.html index.htm index.nginx-debian.html;
 
-        server_name pinapathrunisaikiran.co.in www.pinapathrunisaikiran.co.in;
+        server_name testing24.xyz www.testing24.xyz;
 
         location / {
                 try_files $uri $uri/ =404;
@@ -54,10 +53,10 @@ server {
 
 sudo certbot certonly \
   --agree-tos \
-  --email pinapathruni.saikiran@gmail.com \
+  --email jnanibalu58@gmail.com \
   --manual \
   --preferred-challenges=dns \
-  -d *.pinapathrunisaikiran.co.in \
+  -d *.testing24.xyz \
   --server https://acme-v02.api.letsencrypt.org/directory
   
  
