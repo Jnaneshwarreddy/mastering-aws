@@ -1,4 +1,4 @@
-
+Deployement of the Portfolio on nginx and also route53 for dns & ACM (amazon certificate Manager)
 
 
 
